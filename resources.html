@@ -17,26 +17,56 @@
 	.cen{text-align: center;padding-left: 20px;}
 	.pad-l{padding-left: 20%;}
 	.pad-l2{padding-left: 28%}
-	.bg-1{background:rgba(26,188,156,1);
-		color:#ffffff;}
+	.bg-1{background:#108487;
+		color:#ffffff;
+-webkit-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+		position: relative;
+		z-index: 10;
+	}
 	.bg{background-image:URL('./media/1.jpg');background-attachment: fixed;
 	background-size: cover;
 }
-	.bg2{background-image:URL('./media/2.jpg');background-attachment: fixed;padding-top: 14%;padding-bottom: 14%;
+	.bg2{background-image:URL('./media/2.jpg');background-attachment: fixed;padding-top: 14%;padding-bottom: 17%;
 		background-size: cover;background-position: center;
 }
-	.bg3{background-image:URL('./media/3.jpg');background-attachment: fixed;padding-top: 14%;padding-bottom: 15%;background-size: cover;background-position: bottom;}
+	.bg3{background-image:URL('./media/3.jpg');background-attachment: fixed;padding-top: 14%;padding-bottom: 16%;background-size: cover;background-position: bottom;}
+	.bg4{background-image:URL('./media/4.jpg');background-attachment: fixed;padding-top: 12%;padding-bottom: 15%;background-size: cover;background-position: bottom;}
 	.first-letter{
 		font-size: 35px;
 		font-family: cursive;
 	}
-	.bg-2{background:rgba(50,89,116,1);
+	.bg-2{background:rgba(60,99,126,1);
 		color:white;
-		padding-top: 40px;
-		padding-bottom: 15px;
+		padding-top: 3%;
+		padding-bottom: 5%;
+		-webkit-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+		position: relative;
+		z-index: 10;
 		}
 	.bg-3{background:rgba(193,132,66,1);
-		color:white;}
+		color:white;
+		padding-bottom: 7%;
+		padding-top: 3%;
+-webkit-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+		position: relative;
+		z-index: 10;
+	}
+	.bg-4{background:#0D753B;
+	color:white;
+	padding-top: 5%;
+	padding-bottom: 5%;
+-webkit-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+		position: relative;
+		z-index: 10;
+	}
 	</style>
 	<!-- Editable Begins -->
 	<div class="bg">
@@ -55,7 +85,7 @@
 </div>
 
 <!--LEVEL?-->
-<p style="color:white;text-align: center;line-height: 200%;position: sticky;position: -webkit-sticky;top:0;background: rgba(0,0,0,.5);font-family:Courier;font-size: 30px; margin-bottom: 0;">
+<p style="color:white;text-align: center;line-height: 200%;position: sticky;position: -webkit-sticky;top:0;background: rgba(0,0,0,.5);font-family:Courier;font-size: 30px; margin-bottom: 0; z-index: 12;">
 What's your level?</p>
 
 
@@ -118,6 +148,7 @@ What's your level?</p>
 <!--its contents-->
 <div class="nowrap container-fluid bg-2">
 <div class="cen pad-l inl">
+<br>
  <a href="https://www.codecademy.com">
  <p style="color: #EEEFF4;font-size:18px; line-height: 40px;font-family: fantasy;" title="Learn to code"> Codecademy.com</p>
  </a>
@@ -153,7 +184,7 @@ What's your level?</p>
   <a href="http://pineapple.io">
  <p style="color: #EEEFF4;font-size:18px; line-height: 30px;font-family: fantasy;" title="Web Tutorials and Resources That don't suck"> Pineapple.io</p>
  </a>
- <br>
+ 
 </div>
 </div>
 </div>
@@ -161,15 +192,68 @@ What's your level?</p>
 <!--Ebooks-->
 
 <div class="nowrap bg3 container-fluid">
-<h1 style="font-size: 40px;font-family: monospace;color:white;text-align: center;">
-	<span style="background-color: rgba(143,143,143,.7);"> &ensp;eBooks&ensp;</span>
+<h1 style="font-size: 40px;font-family: monospace;color:white;text-align: center;" title="Links down below!">
+	<span style="background-color: rgba(100,100,100,.7);border-radius: 12px;"> &ensp;eBooks&ensp;</span>
 	</h1>
+</div>
+<!--Its contents-->
+<div class="cen container-fluid bg-3" style="padding-left: 6%;">
+<div class="inl">
+	<h1 style="font-size: 40px;line-height: 300%;font-family: monospace;text-align: center;">
+		Javascript
+	</h1>
+	<a href="http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf">
+	<p style="color:#EEEFF4;font-size:18px;line-height: 30px;font-family: fantasy;"> Javascript: The Good Parts*</p>
+	</a>
+	<a href="http://eloquentjavascript.net">
+	<p style="color: #EEEFF4;font-size:18px; line-height: 30px;font-family: fantasy;"> Eloquent Javascript</p>
+	</a>
+	
+	</div>
+	<div class="cen inl">
+	<h1 style="font-size: 40px;line-height: 300%;font-family: monospace;"> Python</h1>
+		<a href="https://learnpythonthehardway.org/book/">
+	<p style="color: #EEEFF4;font-size:18px; line-height: 30px;font-family: fantasy;"> Learn Python the Hard Way</p>
+	</a>
+	<a href="http://djangobook.com">
+	<p style="color: #EEEFF4;font-size:18px; line-height: 30px;font-family: fantasy;"> The Django Book</p>
+	</a>
+	<a href="https://upload.wikimedia.org/wikipedia/commons/9/91/Python_Programming.pdf">
+	<p style="color: #EEEFF4;font-size:18px; line-height: 30px;font-family: fantasy;"> Python Programming</p>
+	</a>
+	</div>
+
+		<div class="cen inl">
+	<h1 style="font-size: 40px;line-height: 300%;font-family: monospace;word-spacing: -70%;"> Ruby on Rails</h1>
+		<a href="http://rubyonrails.org">
+	<p style="color: #EEEFF4;font-size:18px; line-height: 30px;font-family: fantasy;"> Ruby on Rails Tutorial</p>
+	</a>
+	</div>
 
 </div>
-
 <!--END Section-->
+<!--favorite-->
+<div class="nowrap bg4 container-fluid">
+<h1 style="font-size: 40px;font-family: monospace;color:white;text-align: center;" title="Links down below!">
+	And Your Best Companion
+	</h1>
+</div>
+	<div class="cen container-fluid bg-4">
+		<a href="https://www.html5rocks.com/en/">
+	<p style="color: #EEEFF4;font-size:18px; line-height: 40px;font-family: fantasy;"> HTML5Rocks.com</p>
+	</a>
+	<a href="https://developer.mozilla.org/en-US/docs/Web/Demos_of_open_web_technologies">
+	<p style="color: #EEEFF4;font-size:18px; line-height: 40px;font-family: fantasy;"> Mozilla Demo Studio</p>
+	</a>
+	<a href="https://www.facebook.com/Engineering">
+<p style="color: #EEEFF4;font-size:18px; line-height: 40px;font-family: fantasy;"> Facebook Engineering Blog</p>
+	</a>
+<a href="https://www.facebook.com/Html5Showcase/?hc_ref=PAGES_TIMELINE">
+<p style="color: #EEEFF4;font-size:18px; line-height: 40px;font-family: fantasy;"> Facebook HTML5 Showcase</p>
+	</a>
+	</div>
 	<!-- Editable Ends -->
-	<p style="text-align: center;color:black;font-size: 13px;font-family: serif;"> Copyright Web Monkeys. All Rights Reserved.</p>
+	<p style="text-align: center;color:black;font-size: 13px;font-family: serif; padding-top: 1%;"> Created by Jiawei Tang<br>Copyright Web Monkeys. All Rights Reserved.</p>
 	<footer>
 
 	</footer>
