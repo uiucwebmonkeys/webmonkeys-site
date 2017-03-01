@@ -11,7 +11,7 @@ section {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     border-top: 2px solid #000;
     background-color: #fff;
     padding: 25px;
