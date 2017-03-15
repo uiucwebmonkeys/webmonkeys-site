@@ -1,0 +1,14 @@
+body {
+  background-color : ghostwhite;
+  font-family : "Times New Roman", Cursive;
+}
+
+h1 {
+  font-family : cursive;
+  font-size : 32px;
+}
+
+p {
+  font-family : Times New Roman;
+  font-size : 14px;
+}
