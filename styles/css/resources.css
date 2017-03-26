@@ -1,0 +1,184 @@
+/* Resources */
+.cen { 
+	text-align: center;
+}
+
+.bg {
+	background-image:URL('../../media/1.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 3%;
+}
+
+.bg2 {
+	background-image:URL('../../media/2.jpg');
+	background-attachment: fixed;
+	padding-top: 14%;
+	padding-bottom: 12%;
+	background-size: cover;background-position: center;
+}
+
+.bg3 {
+	background-image:URL('../../media/3.jpg');
+	background-attachment: fixed;
+	padding-top: 14%;
+	padding-bottom: 16%;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.bg4 {
+	background-image:URL('../../media/4.jpg');
+	background-attachment: fixed;
+	padding-top: 12%;
+	padding-bottom: 15%;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.first-letter {
+	font-size: 	50px;
+	font-family: cursive;
+}
+
+.bg-2{
+	background:rgba(60,99,126,1);
+	color:white;
+	-webkit-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+	position: relative;
+	z-index: 10;
+}
+
+.bg-3 {
+	background:rgba(193,132,66,1);
+	color:white;
+	padding-bottom: 7%;
+	padding-top: 3%;
+	-webkit-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+	position: relative;
+	z-index: 10;
+}
+
+
+
+/* Resources More */
+.levels {
+	color: #EEEFF4;
+	font-size: 18px;
+	line-height: 200%;
+	font-family: fantasy;
+}
+
+.levels2{
+	color: #EEEFF4;
+	font-size:18px; 
+	line-height: 40px;
+	font-family: fantasy;
+}
+
+.levels3{
+	color:#EEEFF4;
+	font-size:18px;
+	line-height: 230%;
+	font-family: fantasy;
+}
+
+.levels4{
+	color: #EEEFF4;
+	font-size:18px; 
+	line-height: 40px;
+	font-family: fantasy;
+}
+
+.texts{
+	font-size: 19px; 
+	line-height: 200%; 
+	font-family: Palatino;
+	color:white;
+	text-align: center; 
+	padding: 1%;
+}
+
+/* heads */
+.head1{
+	text-align: center;
+	font-family: Impact;
+	font-size: 40px;
+	color:white;
+}
+
+.head2{
+	font-size: 40px;
+	line-height: 200%;
+	font-family: monospace;
+	text-align: center;
+}
+
+.head3{
+	font-size: 40px;
+	font-family: monospace;
+	text-align: center; 
+	color:#000000;
+}
+
+.head4{
+	font-size: 40px;
+	font-family: monospace;
+	text-align: center;
+	color:#d9d9d9;
+}
+
+.head5{
+	font-size: 40px;
+	font-family: monospace;
+	color:white;
+	text-align: center;
+}
+
+.head6{
+	font-size: 40px;
+	line-height: 200%;
+	font-family: monospace;
+	text-align: center;
+}
+
+.bgoftext{
+	background-color: rgba(90,90,90,.7);
+	border-radius: 12px;
+}
+
+.foottext{
+	text-align: center;
+	color:black;
+	font-size: 13px;
+	font-family: serif; 
+	padding-top: 1%;
+}
+/* padding */
+.pad1{
+	padding-top: 7%; 
+	padding-bottom: 1%;
+}
+
+.pad2{
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
