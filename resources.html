@@ -13,17 +13,40 @@
 	<!-- Styling Links -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./styles/css/styles.css">
-	<link rel="stylesheet" type="text/css" href="./styles/css/resources.css">
-  	
+  <link rel="stylesheet" type="text/css" href="./styles/css/resources.css">
+  
   	<!-- Scripting Links -->
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<header>
-
+		<nav class="navbar navbar-fixed-top">
+		  	<div class="container-fluid">
+		    	<div class="navbar-header">
+		      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        		<span class="icon-bar"></span>
+		        		<span class="icon-bar"></span>
+		        		<span class="icon-bar"></span>                        
+		      		</button>
+		      		<a class="navbar-brand" href="index.html"><img src="./media/Logo.png" height="100%"></a>
+		    	</div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+				    <ul class="nav navbar-nav navbar-right">
+				        <li class="menu-item"><a href="about.html">About</a></li>
+				        <li class="menu-item"><a href="events.html">Events</a></li>
+				        <li class="menu-item"><a href="projects.html">Project</a></li>
+				        <li class="menu-item"><a href="resources.html">Resources</a></li>
+				        <li class="menu-item"><a href="join.html">Join</a></li>
+				        <li class="menu-item"><a href="contact.html">Contact</a></li>
+				    </ul>
+			    </div>
+		  	</div>
+		</nav>
 	</header>
-	<!-- Editable Begins -->
+  
+  <section>
+		<!-- Editable Begins -->
 	<div class="bg row">
 		<div class="container">
 			<div class="page-header">
@@ -208,9 +231,11 @@
 	</div>
 	
 	<p class="foottext"> Created by Jiawei Tang<br>Copyright Web Monkeys. All Rights Reserved.</p>
-	<!-- Editable Ends -->
-	<footer>
 
+		<!-- Editable Ends -->
+	</section>
+	<footer class="container-fluid text-center">
+	  	<div>ACM WebMonkeys &copy; 2017</div>
 	</footer>
 </body>
 </html>
