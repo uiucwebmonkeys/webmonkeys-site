@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Title -->
+	<title>Join | WebMonkeys</title>
+	<!-- Meta Information -->
+	<meta charset="utf-8">
+  	<meta name="description" content="The Offical Web Monkeys Website">
+ 	<meta name="keywords" content="ACM,Web,Monkeys,HTML,CSS,XML,JavaScript,UIUC,Illinois">
+  	<meta name="author" content="UIUC WebMonkeys">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Styling Links -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/styles.css">
+	<style type="text/css">
+		.issueImg {
+			width: 50px;
+		}
+	</style>
+  	
+  	<!-- Scripting Links -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  	<!-- React -->
+  	<script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-fixed-top">
+		  	<div class="container-fluid">
+		    	<div class="navbar-header">
+		      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        		<span class="icon-bar"></span>
+		        		<span class="icon-bar"></span>
+		        		<span class="icon-bar"></span>                        
+		      		</button>
+		      		<a class="navbar-brand" href="index.html"><img src="./media/Logo.png" height="100%"></a>
+		    	</div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+				    <ul class="nav navbar-nav navbar-right">
+				        <li class="menu-item"><a href="about.html">About</a></li>
+				        <li class="menu-item"><a href="events.html">Events</a></li>
+				        <li class="menu-item"><a href="projects.html">Project</a></li>
+				        <li class="menu-item"><a href="resources.html">Resources</a></li>
+				        <li class="menu-item"><a href="join.html">Join</a></li>
+				        <li class="menu-item"><a href="contact.html">Contact</a></li>
+				    </ul>
+			    </div>
+		  	</div>
+		</nav>
+	</header>
+
+	<section>
+		<!-- Editable Begins -->
+		<div class="container">
+			<h1>Issues</h1>
+			<div id="root"></div>
+			<script type="text/babel">
+				const ISSUES_INTERVAL_MS = 10 * 60 * 1000;
+				const githubURL = 'https://api.github.com/repos/uiucwebmonkeys/webmonkeys-site/issues';
+				var IssuesDiv = React.createClass({
+					getInitialState: function () {
+						return {
+							issues: []
+						};
+					},
+
+					componentDidMount: function () {
+						this.updateData();
+						setInterval(this.updateData, ISSUES_INTERVAL_MS);
+					},
+
+					updateData: function () {
+						$.getJSON(githubURL)
+							.then((data) => {
+								this.setState({
+									issues: data
+								})
+							});
+					},
+
+					getIssues: function() {
+				        var issues = this.state.issues;
+				        return issues.map(function(issue) {
+				            return 	<div key={issue.id} className="well">
+				            			<div className="row">
+					            			<div className="col-lg-2 col-md-2 col-sm-6">
+												<h2><img className="issueImg" src="./media/issue-opened.svg"/> {issue.number}</h2>
+					            			</div>
+					            			<div className="col-lg-10 col-md-10 col-sm-6">
+					            				<h2>{issue.title}</h2>
+					            				<div>{issue.body}</div>
+							                	<div className="badge">Assigned To: {issue.assignee ? issue.assignee.login : "None, Tackle it!"}</div>
+					            			</div>
+										</div>
+						            </div>;
+				        }.bind(this));
+				    },
+
+				    render: function() {
+				        return  <div>
+						            <div>{this.getIssues()}</div>
+						            <div className="well">Interested in contributing on issues? Come to WebMonkeys Meetings!</div>
+						        </div>;
+				    }
+
+				});
+
+		      	ReactDOM.render(
+		        	<IssuesDiv />,
+		        	document.getElementById('root')
+		      	);
+		    </script>
+		</div>
+		<!-- Editable Ends -->
+	</section>
+	<footer class="container-fluid text-center">
+	  	<div>ACM WebMonkeys &copy; 2017</div>
+	</footer>
+</body>
+</html>
