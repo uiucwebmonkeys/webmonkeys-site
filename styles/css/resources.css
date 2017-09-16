@@ -1,0 +1,165 @@
+/* Resources */
+.bg {
+	background-image:URL('../../media/1.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	color: #fff;
+}
+
+.bg2 {
+	background-image:URL('../../media/2.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+.bg3 {
+	background-image:URL('../../media/3.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: bottom;
+	color: #fff;
+}
+
+.bg4 {
+	background-image:URL('../../media/4.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: bottom;
+	color: #fff;
+}
+
+.bg-1 {
+	background: #fff;
+	color: #000;
+}
+
+.bg-2{
+	background: rgba(60,99,126,1);
+	color: #fff;
+}
+
+.bg-3 {
+	background:rgba(193,132,66,1);
+	color: #fff;
+}
+
+/* Resources More */
+.levels {
+	color: #EEEFF4;
+	font-size: 18px;
+	line-height: 200%;
+}
+
+.levels2{
+	color: #EEEFF4;
+	font-size:18px; 
+	line-height: 40px;
+}
+
+.levels3{
+	color:#EEEFF4;
+	font-size:18px;
+	line-height: 230%;
+}
+
+.levels4{
+	color: #EEEFF4;
+	font-size:18px; 
+	line-height: 40px;
+}
+
+.texts{
+	font-size: 19px; 
+	line-height: 200%; 
+	color:white;
+	text-align: center; 
+	padding: 1%;
+}
+
+/* heads */
+.head1{
+	text-align: center;
+	font-size: 40px;
+	color:white;
+}
+
+.head2{
+	font-size: 40px;
+	line-height: 200%;
+	text-align: center;
+}
+
+.head3{
+	font-size: 40px;
+	text-align: center; 
+	color:#000000;
+}
+
+.head4{
+	font-size: 40px;
+	text-align: center;
+	color:#d9d9d9;
+}
+
+.head5{
+	font-size: 40px;
+	color:white;
+	text-align: center;
+}
+
+.head6{
+	font-size: 40px;
+	line-height: 200%;
+	text-align: center;
+}
+
+.bgoftext{
+	background-color: rgba(90,90,90,.7);
+	border-radius: 12px;
+}
+
+
+/* Resource Stylings */
+.resource-list {
+	list-style-type: none;
+	padding: 0px;
+	font-size: 15px;
+}
+
+.resource-list a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.resource-list a:hover {
+	text-decoration: underline;
+}
+
+.resources-box {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.link-black a {
+	color: #000;
+}
+
+.link-white a {
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

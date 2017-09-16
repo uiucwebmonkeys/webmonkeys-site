@@ -7,7 +7,11 @@ body {
 }
 section {
 	margin-top: 80px;
+<<<<<<< HEAD
 	margin-bottom: 50px;
+=======
+	min-height: 600px;
+>>>>>>> master
 }
 
 footer {
@@ -18,6 +22,14 @@ footer {
     width: 100%;
     bottom: 0;
     font-weight: bold;
+<<<<<<< HEAD
+=======
+	z-index: 10;
+}
+
+header {
+ 	z-index: 10;
+>>>>>>> master
 }
 
 /* ID Styling */
@@ -61,6 +73,14 @@ span.icon-bar {
     padding: 0px;
 }
 
+<<<<<<< HEAD
+=======
+#map {
+	height: 400px;
+	width: 100%;
+}
+
+>>>>>>> master
 @media screen and (min-width: 767px) {
 	.nav>li>a {
 	    position: relative;
