@@ -9,7 +9,9 @@
  	<meta name="keywords" content="ACM,Web,Monkeys,HTML,CSS,XML,JavaScript,UIUC,Illinois">
   	<meta name="author" content="UIUC WebMonkeys">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+  	<link rel="icon" 
+      type="image/png" 
+      href="https://imgur.com/sZs4ye3.png">
 	<!-- Styling Links -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./styles/css/styles.css">
@@ -28,50 +30,52 @@
 		        		<span class="icon-bar"></span>
 		        		<span class="icon-bar"></span>                        
 		      		</button>
-		      		<a class="navbar-brand" href="index.html"><img src="./media/Logo.png" height="100%"></a>
+		      		<!-- <a class="navbar-brand" href="index.html"><img src="./media/Logo.png" height="100%"></a> -->
 		    	</div>
 			    <div class="collapse navbar-collapse" id="myNavbar">
-				    <ul class="nav navbar-nav navbar-right">
-				        <li class="menu-item"><a href="about.html">About</a></li>
-				        <li class="menu-item"><a href="events.html">Events</a></li>
-				        <li class="menu-item"><a href="projects.html">Project</a></li>
-				        <li class="menu-item"><a href="resources.html">Resources</a></li>
-				        <li class="menu-item"><a href="join.html">Join</a></li>
-				        <li class="menu-item"><a href="contact.html">Contact</a></li>
+				    <ul class="nav navbar-nav row" >
+				    	<li ><a href="index.html"><img class ="imgBar"src="https://imgur.com/sZs4ye3.png"/></a></li>
+				        <li class="currentNav"><a href="about.html">ABOUT</a></li>
+				        <li ><a href="projects.html">PROJECTS</a></li>
+				        <li ><a href="resources.html">RESOURCES</a></li>
+				        <li ><a href="join.html">JOIN</a></li>
+				        <!-- <li ><a href="contact.html">CONTACT</a></li> -->
 				    </ul>
 			    </div>
 		  	</div>
 		</nav>
 	</header>
-
 	<section>
-		<div class="container">
-			<h1>About</h1>
-			<p>Web Monkeys is a Special Interest Group(SIG) at the University of Illinois at Urbana-Champaign, and we are affiliated with our ACM(Association for Computing Machinery) local chapter. We are, for the most part, like-minded students brought together by our common interest in all things related to web design and/or programming.</p>
-
-			<p>Our main goal is to explore the new and emerging technologies of the web. From HTML5 to Python, from Rails to Node, we spend most of our time diving into projects whose sole purpose is to push the limits of the internet.</p>
-
-			<p>Come join us is a few of our events to see what we’re up to. We will have many events throughout the year that you can stop by to say, “Hello!”</p>
-
-			<h2>Event Descriptions</h2>
-
-			<p><strong>Weekly Meetings - </strong>We will have general weekly meetings on Wednesdays, 3405 Siebel Center at 7:00PM – 8:30PM.</p>
-
-			<p><strong>Group Projects</strong> - At the beginning of the semester, members will be given a chance to pitch ideas that they will like to work on form the remaining of the semester. Once the ideas are decided, everyone can pair-up and chose their project of choice that they’d like to work on.</p>
-
-			<p><strong>Demo Days</strong> - At the end of each month, groups will be allowed to show off the progress on their projects.</p>
-
-			<p><strong>Office Hours</strong> - The officers will hold office hours during the week to help groups with their projects.</p>
-
-			<p><strong>Tutorial Sessions</strong> - Members will be have the opportunity to share their knowledge with everyone. We will have planned days where a member can give a lesson on any internet technology related topic of their choice. Come learn Github, how to develop a website, or pick up Django in your spare time.</p>
-
-			<p><strong>Hackathons</strong> - Spend the night coding away on any idea you’d like. These may or may not be a typical 24-hour hackathon.</p>
-
-			<p><strong>Random Week</strong> - Members can vote on a “random week” to study anything off track of what they are doing. A week to give people the chance to splurge. We may study databases, servers, API’s, Backbone, Git, HTML5, etc. Take the time to pick up an extra skill that you always wanted.</p>
-
-			<p><strong>Fun Night Out</strong> - Just a random none code related night to have fun.</p>
+		<div class="row">
+			<div class="desc container" style="margin-top:70px;">
+				<!-- <h1 class="resTitle">Resources</h1> -->
+				<p>As a member of Web Monkeys, it will be essential to know the basics of web development, particularly HTML and CSS. Throughout the year, we will be working on projects that requires knowledge of HTML and CSS. Some of our previous members have provided us with introductory tutorials to web development. Additionally, we have provided links to various resources to help you get started in web programming. Feel free to ask questions if you need additional help.</p>
+			</div>
 		</div>
-
+		<!-- Editable Begins -->
+		<div class="container" style="margin-top:70px;margin-bottom:50px;">
+		<!-- 	<h1>Events</h1>  -->
+			<div class="row">
+				<div class="col-sm-4 text-center">
+				    <img src="./media/CITD2.jpg" width="100%">
+				    <h1>General Meetings</h1>        
+				    <p>General Meetings will be held Tuesdays at 6:00pm in Siebel 1105. </p>
+				    <p>Meeting times and changes will be announced on our <a style="color:white;"href="https://www.facebook.com/groups/webmonkeys.uiuc/" target="_blank">Facebook Group</a>.</p>
+				</div>
+				<div class="col-sm-4 text-center">
+				    <img src="./media/Granular.jpg" width="100%">
+				    <h1>Tech Talks</h1>
+				   	<p>WebMonkeys Occasionally has Tech Talk from companies such as Granulr (Above) and Captial One.</p>
+				    <p>Tech Talks will be announce during meetings and on Facebook, so keep a look out. There is usually free food!</p>
+				</div>
+				<div class="col-sm-4 text-center">
+				  	<img src="./media/CITD1.jpg" width="100%">
+				    <h1>Code In the Dark</h1>
+				    <p>Test out your HTML and CSS skills with our semester Code in the Dark Challenge competition.</p>
+				    <p>The Rules: 15 min, Pure HTML/CSS, No previews. For the competition, everyone will be shown a simple webpage, and each contestant has to do their best to replicate the webpage without any previews of how their code looks.</p>
+				</div>
+			</div>
+		</div>
 	</section>
 	<footer class="container-fluid text-center">
 	  	<div>ACM WebMonkeys &copy; 2017</div>
